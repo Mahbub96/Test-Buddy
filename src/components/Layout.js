@@ -1,14 +1,18 @@
-import React from 'react'
-// import Login from '../pages/Login'
-// import PreLogin from '../pages/PreLogin'
-import Signup from '../pages/Signup'
+import React from 'react';
+// import Login from '../pages/Login';
+import PreLogin from '../pages/PreLogin';
+// import Signup from '../pages/Signup';
+// import Profile from '../pages/Profile';
+
+
 function Layout() {
     return (
-        <div>
-            {/* <PreLogin/> */}
+        <>
+            <PreLogin/>
             {/* <Login/> */}
-            <Signup/>
-        </div>
+            {/* <Signup/> */}
+            {/* <Profile/> */}
+        </>
     )
 }
 

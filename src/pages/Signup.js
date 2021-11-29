@@ -1,12 +1,12 @@
 import React from 'react';
 import Left from '../components/Left';
 import SignupForm from '../components/SignupForm';
+// import classes from '../Styles/Signup.module.css';
 import '../Styles/Signup.css';
-
 
 function Signup() {
     return (
-        <div>
+        <>
             <div className="container">
                 <div className="wrap">
                     <div className="left">
@@ -17,7 +17,7 @@ function Signup() {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

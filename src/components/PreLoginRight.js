@@ -1,11 +1,12 @@
 import React from 'react'
+import logo from '../assets/images/logo.png'
 
 function PreLoginRight() {
     return (
-        <div>
+        <>
             <div className="logo">
             <div className="logoTop">
-              <img alt="logo" />
+              <img src={logo} alt="logo" />
               <h2><span>Test</span><span>Buddy</span></h2>
             </div>
             <p>Remote Test Made Simple</p>
@@ -20,7 +21,7 @@ function PreLoginRight() {
             </button>
           </div>
           <p className="moral">Join with millions of others</p>
-        </div>
+        </>
     )
 }
 

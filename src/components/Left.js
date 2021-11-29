@@ -1,9 +1,10 @@
 import React from 'react'
+import classes from '../Styles/Left.module.css';
 
 function Left() {
     return (
-        <div>
-            <div className="text">
+        <>
+            <div className={classes.pos}>
                 <h1>Anywhere in the world. <br />Online test made simple</h1>
                 <h4>
                 Effortless online test taking at your finger tip. Join with
@@ -11,7 +12,7 @@ function Left() {
                 toolset. Auto evaluation and, many more exciting features.
                 </h4>
             </div>
-        </div>
+        </>
     )
 }
 

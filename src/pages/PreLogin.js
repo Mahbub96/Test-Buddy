@@ -1,6 +1,10 @@
-import '../Styles/App.css';
 import Left from '../components/Left';
 import PreLoginRight from '../components/PreLoginRight';
+import '../Styles/App.css';
+import '../Styles/Prelogin.css';
+import classes from '../Styles/Prelogin.module.css';
+
+
 
 export default function PreLogin(){
 
@@ -8,8 +12,8 @@ export default function PreLogin(){
         
         <>
             <div className="container">
-                <div className="wrap">
-                    <div className="left">
+                <div className={`wrap ${classes.height}`}>
+                    <div className={` ${classes.bg} left`}>
                         <Left/>
                     </div>
                     <div className="right">
