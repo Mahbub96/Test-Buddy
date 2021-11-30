@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Input({...attributes}) {
+function Input(attributes) {
     return (
         <>
             <input {...attributes}/>

@@ -15,7 +15,9 @@ function Profile() {
          <section className="bottom">
 
             <Details />
-            <Card/>
+            <Card>
+                
+            </Card>
          </section>
 
           
