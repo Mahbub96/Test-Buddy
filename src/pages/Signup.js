@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import classes from '../Styles/Signup.module.css';
 function Signup() {
@@ -16,19 +16,25 @@ function Signup() {
                     <div className={classes.right}>
                         <div className={classes.logo}>
                             <div className={classes.logoTop}>
-                                <img src={logo} alt="Logo"/>
+                                <Link to='/home'>
+                                    <img src={logo} alt="Logo"/>
+                                </Link>
                             </div>
                             <div className={classes.log}>
                                 <input type="text" placeholder="Full Name"/>
                                 <input type="email" placeholder="Email"/>
                                 <input type="password" placeholder="Password"/>
                                 <input type="password" placeholder="Retype Password"/>
-                                <button className={classes.login} onclick="location.href='../profile/profile.html'">Sign Up</button>
+                                <Link to='/signup'>
+                                    <button className={classes.login}>Sign Up</button>
+                                </Link>
                                 <p>Or</p>
-                                <button className={classes.logingoogle}><i className="classes.fab fa-google-plus-g"></i>Sign UP with Google</button>
+                                <Link to='/logWithGoogle'>
+                                    <button className={classes.logingoogle}><i className="classes.fab fa-google-plus-g"></i>Sign UP with Google</button>
+                                </Link>
                             </div>
                             <div className={classes.signup}>
-                                <p>Already have an account? <a href="../login/log.html">Log in</a></p>
+                                <p>Already have an account? <Link to='/login'>Log in</Link></p>
                             </div>
                         </div>
                     </div>

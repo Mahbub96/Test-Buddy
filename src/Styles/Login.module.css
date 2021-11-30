@@ -25,6 +25,7 @@ body {
   box-shadow: 3px 3px 30px #aaa;
   margin: 100px 0;
   display: block;
+  height: 515px;
 }
 .container .wrap .left {
   background-image: url("../assets/images/Log.jpg");

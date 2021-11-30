@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import classes from '../Styles/Prelogin.module.css';
 
@@ -12,17 +13,17 @@ function PreLoginRight() {
             <p>Remote Test Made Simple</p>
           </div>
           <div className={classes.btn}>
-            <a href='../pages/Login'>
+            <Link to='/login'>
                   <button className={classes.btn1}>
                 Sign In
               </button>
-            </a>
+            </Link>
             <br />
-            <a href='../pages/Signup'>
+            <Link to='/signup'>
               <button className={classes.btn2}>
                 Create new account
               </button>
-            </a>
+            </Link>
           </div>
           <p className={classes.moral}>Join with millions of others</p>
 
