@@ -1,13 +1,15 @@
 // import imgs from 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAACE0lEQVRoge2YPWsUURhGzxslCVgoCGL8LEIwTQqxDtiIkFIUEStJOgULKy3VnyD6B8TKH2BhK7HwMyBISBMsxIjYiEaDHosoBtmdvXd2ZnbRObDVPDP3PPMOl8tCS8v/TVT1IHUEmAVOAdPAFHAIGAHeAavAE+AB8DAi1qtauy/UcfWqumo679Ub6s5By8+pKxnif7Omnh2U/DX1Rx/yW7mtbm9KPNRbFYlv5X4jJdQrNcj/5k7d8rPqRo0FVM/lOCVvo+o24BVwJLd4JmvAdER8TAmPZDz4PPXLA+wBLqeGcybwmmYKAHwA9kXEt17BpAmoMzQnD7AbOJkSTP2E5sq7lOZESii1wPE+RMpyLCWUWmB/HyJlmUwJpRaY6EOkLLtSQkm7kPqdvC23EiKip1+qVOPyqQytWCptgUHz7xdQx5sQKbt2ygQWKnApy3yvQOE+q44BK8CBqowyeQtMRsSXboFeE1hgcPKweQK4UBToOgF1FFgGDlcslcsbYCoivna6WDSBeQYvD3CQgikUTWAJmKnDqAQvIuJopwtFBdaBsdqU8vgcETs6XSj6hJZrkilDV5eiAtcBq3fJRuBmuTv1jLrUwJ9ZndhQX6qnq30fLUOKupjxeTyqat0qj9P3MrJ3K1y3GtRR9XnC23/q5jFl+FAnepR4pu4dtGch6ph6SX2sfvr1W1Qvunk8b2lpafnDT/rcXxdIyd3qAAAAAElFTkSuQmCC';
 import React from 'react';
 import imgs from '../assets/images/logo.png'
+import classes from '../Styles/Home.module.css';
+
 
 function Navbar() {
     return (
         <>
             
                 <nav>
-                    <div className="settings">
+                    <div className={classes.settings}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         x="0px"
@@ -22,14 +24,14 @@ function Navbar() {
                         ></path>
                     </svg>
                     </div>
-                    <div className="notifications">
+                    <div className={classes.notifications}>
                     <img
                         src={imgs} alt="Images"
                     />
                     </div>
                 </nav>
-                <div className="user">
-                    <div className="image"></div>
+                <div className={classes.user}>
+                    <div className={classes.image}></div>
                     <h1>Mahbuba Alam</h1>
                 </div>
                 

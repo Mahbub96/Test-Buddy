@@ -5,7 +5,7 @@ import classes from '../Styles/Prelogin.module.css';
 function PreLoginRight() {
     return (
         <>
-            <div className={classes.logo}>
+          <div className={classes.logo}>
             <div className={classes.logoTop}>
               <img src={logo} alt="logo" />
               <h2><span>Test</span><span>Buddy</span></h2>
@@ -26,10 +26,6 @@ function PreLoginRight() {
             </Link>
           </div>
           <p className={classes.moral}>Join with millions of others</p>
-
-          
-
-
 
         </>
     )

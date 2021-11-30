@@ -1,8 +1,20 @@
+import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
+import { signIn } from '../firebase';
 import classes from '../Styles/Login.module.css';
 
 function Login() {
+    const emailRef = useRef();
+    const passwordRef = useRef();
+
+    async function handleSignIn(){
+        try{
+            await signIn( emailRef.current.value, passwordRef.current.value );
+        }catch(err){
+            console.log(JSON.stringify(err));
+        }
+    }
     return (
         <>
           <div className={classes.container}>
@@ -20,12 +32,12 @@ function Login() {
                             <img src={logo} alt="logo"/>
                         </div>
                         <div className={classes.log}>
-                            <input type="text" placeholder="Username or Email"/>
-                            <input type="password" placeholder="Password"/>
+                            <input type="text" ref={emailRef} placeholder="Username or Email"/>
+                            <input type="password" ref={passwordRef} placeholder="Password"/>
                             <Link to='/home' >
-                                <button className={classes.login} onclick="location.href='../profile/profile.html'">Log In</button>
+                                <button className={classes.login} onclick={handleSignIn}>Log In</button>
                             </Link>
-                            <Link to='/notFound'>
+                            <Link to='/forgot'>
                                 <a className={classes.forgot} href>Forgot Password</a>
                             </Link>
                             <p>Or</p>

@@ -9,10 +9,10 @@
   --tertiaryHover: green;
   --secondaryHover: #fab011;
 }
-
 body {
   font-family: "Roboto", sans-serif;
 }
+
 .container {
   width: 980px;
   margin: auto;

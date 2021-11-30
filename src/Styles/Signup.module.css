@@ -2,13 +2,6 @@
   margin: 0;
   padding: 0;
 }
-:root {
-  --primaray: #fff;
-  --secondary: #ffd04b;
-  --tertiary: #1fa467;
-  --tertiaryHover: green;
-  --secondaryHover: #fab011;
-}
 
 body {
   font-family: "Roboto", sans-serif;
