@@ -1,8 +1,8 @@
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/logo.png';
-import { signIn } from '../firebase';
-import classes from '../Styles/Login.module.css';
+import logo from './assets/images/logo.png';
+import { signIn } from './firebase';
+import classes from './Styles/Login.module.css';
 
 function Login() {
     const emailRef = useRef();
@@ -12,6 +12,7 @@ function Login() {
         try{
             await signIn( emailRef.current.value, passwordRef.current.value );
         }catch(err){
+            alert("Wrong Information!");
             console.log(JSON.stringify(err));
         }
     }
@@ -34,9 +35,9 @@ function Login() {
                         <div className={classes.log}>
                             <input type="text" ref={emailRef} placeholder="Username or Email"/>
                             <input type="password" ref={passwordRef} placeholder="Password"/>
-                            <Link to='/home' >
-                                <button className={classes.login} onclick={handleSignIn}>Log In</button>
-                            </Link>
+                            {/* <Link to='/home' > */}
+                                <button className={classes.login} onClick={handleSignIn}>Log In</button>
+                            {/* </Link> */}
                             <Link to='/forgot'>
                                 <a className={classes.forgot} href>Forgot Password</a>
                             </Link>
