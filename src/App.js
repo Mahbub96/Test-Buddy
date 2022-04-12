@@ -1,3 +1,4 @@
+
 import {
   BrowserRouter as Router, Route, Routes
 } from "react-router-dom";
@@ -14,32 +15,33 @@ import './Styles/App.css';
 function App() {
   // eslint-disable-next-line no-unused-vars
   const user = useAuth();
+
   return (
     <div className="App">
-           <Router>
-            <Routes>
-            { user? (
+      <Router>
+        <Routes>
+          {user ? (
 
-                  <>
-                    <Route path='/' element={<Profile/>} />
-                    <Route path='/login' element={<Profile/>} />
-                  <Route path='/signup' element={<Profile/>} />
-                  <Route path='/home' element={<Profile/>} />
-                  </>
-                  
-                  ) : (
-                    <>
-                      <Route path='/' element={<PreLogin/>} />                  
-                      <Route path='/login' element={<Login/>} />
-                      <Route path='/signup' element={<Signup/>} />
-                      <Route path='/home' element={<PreLogin/>} />
-                   </>
-                ) }
-                <Route path='/logWithGoogle' element={<UnderConstraction/>} />
-                <Route path='/*' element={<NotFound/>} />
+            <>
+              <Route path='/' element={<Profile />} />
+              <Route path='/login' element={<Profile />} />
+              <Route path='/signup' element={<Profile />} />
+              <Route path='/home' element={<Profile />} />
+            </>
 
-            </Routes>
-        </Router>
+          ) : (
+            <>
+              <Route path='/' element={<PreLogin />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/signup' element={<Signup />} />
+              <Route path='/home' element={<PreLogin />} />
+            </>
+          )}
+          <Route path='/logWithGoogle' element={<UnderConstraction />} />
+          <Route path='/*' element={<NotFound />} />
+
+        </Routes>
+      </Router>
     </div>
   );
 }

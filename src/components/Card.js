@@ -1,10 +1,10 @@
 // import React from 'react';
 import classes from '../Styles/Home.module.css';
 
-function Card({ImgSrc,children}) {
+function Card({ ImgSrc, children }) {
     return (
         <div className={classes.card}>
-            <div class="icon">
+            <div className="icon">
                 <img
                     src={ImgSrc} alt="Logo"
                 />
